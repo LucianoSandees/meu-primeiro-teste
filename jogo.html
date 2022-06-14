@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+function sorteia(n){
+
+   return Math.round(Math.random() * n);
+}
+
+var numeroPensado = sorteia(10);
+var tentativa = parseInt(prompt(" fale um numero"));
+
+if (tentativa == numeroPensado) {
+
+    mostra("Parabéns, você acertou!!");
+
+    }
+    else{
+
+    if (tentativa > numeroPensado) {
+
+        mostra( "hum.. seu numero é maior do que eu pensei")
+    
+
+    }
+     else{
+
+        mostra("hum.. seu numero é menor do que eu pensei")
+    }}
+
+
+</script>
